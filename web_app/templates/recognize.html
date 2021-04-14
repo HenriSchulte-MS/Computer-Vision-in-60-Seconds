@@ -2,12 +2,13 @@
 <html>
 <head>
     <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
-    <title>Microsoft Denmark Data & AI Day</title>
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon/favicon.png') }}">
+    <title>Computer Vision Demo</title>
 </head>
 <body>
     <div>
-        <h2>Microsoft Denmark Data & AI Day</h2>
-        <h1>60-Seconds Image Recognition</h1>
+        <h2>Computer Vision Demo</h2>
+        <h1>Image Recognition</h1>
     </div>
     <div id="results-container">
         <div class="results">
@@ -20,6 +21,11 @@
             {% endfor %}
         </div>
         <img class="results" src={{image}}></img>
+    </div>
+    <div id="footer">
+        <a href="https://github.com/HenriSchulte-MS/Computer-Vision-in-60-Seconds/" class="white-text">
+            Source Code on Github
+        </a>
     </div>
 </body>
 </html>

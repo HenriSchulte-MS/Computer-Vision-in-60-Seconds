@@ -21,3 +21,5 @@ def recognize():
         image.save(image_path)
 
         return render_template('recognize.html', captions=description_result.captions, image=url_for('static', filename='img/' + image.filename))
+    else:
+        return render_template('index.html')
